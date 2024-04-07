@@ -10,7 +10,7 @@ dropout = 0.1
 
 # Load the trained model
 model = Transformer(tgt_vocab_size, d_model, num_heads, num_layers, d_ff, max_seq_length, dropout)
-model.load_state_dict(torch.load("app/v3.pth"))
+model.load_state_dict(torch.load("app/v2.pth"))
 model.eval()
 
 # Example usage
